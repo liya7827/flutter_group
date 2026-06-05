@@ -1,4 +1,4 @@
-# Flutter Hello World Personalized
+# innovation-flutter-team-1
 
 创新实验第 14 周 Flutter Hello World 个性化任务。
 
