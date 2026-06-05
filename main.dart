@@ -68,7 +68,7 @@ class _HelloHomePageState extends State<HelloHomePage> {
                   shape: BoxShape.circle,
                   boxShadow: [
                     BoxShadow(
-                      color: const Color(0xFF98D8C8).withOpacity(0.3),
+                      color: const Color(0xFF98D8C8).withValues(alpha: 0.3),
                       blurRadius: 20,
                       offset: const Offset(0, 8),
                     ),
@@ -82,13 +82,16 @@ class _HelloHomePageState extends State<HelloHomePage> {
               ),
               const SizedBox(height: 32),
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 24,
+                  vertical: 16,
+                ),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.05),
+                      color: Colors.black.withValues(alpha: 0.05),
                       blurRadius: 10,
                       offset: const Offset(0, 4),
                     ),
@@ -108,10 +111,7 @@ class _HelloHomePageState extends State<HelloHomePage> {
               const Text(
                 '我已完成第14周 Flutter 入门任务',
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Color(0xFF7CB342),
-                ),
+                style: TextStyle(fontSize: 16, color: Color(0xFF7CB342)),
               ),
               const SizedBox(height: 24),
               Container(
@@ -129,7 +129,10 @@ class _HelloHomePageState extends State<HelloHomePage> {
                     Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Icon(Icons.person_outline, color: Color(0xFF558B2F)),
+                        const Icon(
+                          Icons.person_outline,
+                          color: Color(0xFF558B2F),
+                        ),
                         const SizedBox(width: 8),
                         const Text(
                           '姓名：Mane',
@@ -144,7 +147,10 @@ class _HelloHomePageState extends State<HelloHomePage> {
                     Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Icon(Icons.badge_outlined, color: Color(0xFF558B2F)),
+                        const Icon(
+                          Icons.badge_outlined,
+                          color: Color(0xFF558B2F),
+                        ),
                         const SizedBox(width: 8),
                         const Text(
                           '学号：****0157',
@@ -159,7 +165,10 @@ class _HelloHomePageState extends State<HelloHomePage> {
                     Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Icon(Icons.group_outlined, color: Color(0xFF558B2F)),
+                        const Icon(
+                          Icons.group_outlined,
+                          color: Color(0xFF558B2F),
+                        ),
                         const SizedBox(width: 8),
                         const Text(
                           '小组：第1组',
@@ -175,14 +184,14 @@ class _HelloHomePageState extends State<HelloHomePage> {
               ),
               const SizedBox(height: 32),
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 24,
+                  vertical: 12,
+                ),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(30),
-                  border: Border.all(
-                    color: const Color(0xFF98D8C8),
-                    width: 2,
-                  ),
+                  border: Border.all(color: const Color(0xFF98D8C8), width: 2),
                 ),
                 child: Text(
                   '✨ 今日已完成任务：$completedTasks 次',
